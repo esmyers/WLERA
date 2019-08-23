@@ -911,17 +911,9 @@ require([
             map.setScale(parcelsScale);
         });
 
-        $("#IEwarnContinue").click(function () {
-            $('#disclaimerModal').modal({backdrop: 'static'});
-            $('#disclaimerModal').modal('show');
-        });
 
-        if(navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/') > 0){
-            $("#IEwarningModal").modal('show');
-        } else {
-            $('#disclaimerModal').modal({backdrop: 'static'});
-            $('#disclaimerModal').modal('show');
-        }
+
+
 
         //collapse legend on load if small screen (saves real estate)
         if ( $(window).width() < 767) {
@@ -1470,7 +1462,7 @@ require([
         ////end reference layers////////////////////////////////////////
 
         ///parameters group
-/*         const landuseLayer =  new ArcGISDynamicMapServiceLayer(mapServiceRoot + "WLERA/MapServer", {id: "landuse", visible:false, opacity:1} );
+        const landuseLayer =  new ArcGISDynamicMapServiceLayer(mapServiceRoot + "WLERA/MapServer", {id: "landuse", visible:false, opacity:1} );
         landuseLayer .setVisibleLayers([13]);
         mapLayers.push(landuseLayer );
         mapLayerIds.push(landuseLayer.id);
@@ -1518,7 +1510,7 @@ require([
         mapLayerIds.push(waterMaskLayer.id);
         waterMaskLayer.inLegendLayers = true;
         legendLayers.push ({layer:waterMaskLayer, title: ""});
- */
+ 
 
         /*LAYER DEFS FOR ADDED SPARROW LAYERS */
         const app = {};

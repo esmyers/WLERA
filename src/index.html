@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WLERA</title>
+        <title>OWR</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
@@ -70,20 +70,14 @@
               </button>
               <a class="navbar-brand" href="http://usgs.gov">
                   <img id="usgsLogo" alt="USGS logo" height="38px" src="images/USGS_ID_white.png">
-                  <!--<span class='hidden-xs' style='font-size:20px;display:inline-block;'>&nbsp;&nbsp;Western Lake Erie Restoration Assessment (WLERA)</span>-->
               </a>
-              <p class="navbar-text hidden-xs navbar-title">Western Lake Erie Restoration Assessment</p>
+              <p class="navbar-text hidden-xs navbar-title">Ohio Wetlands Restoration (DEMO)</p>
 
           </div>
 
           <button id="geosearchNav" type="button" class="btn btn-primary navbar-btn pull-right">
               <span class="glyphicon glyphicon-search"></span>
               <span id="geosearchButtonText"> Geosearch</span>
-          </button>
-
-          <button id="printNavButton" type="button" class="btn btn-primary navbar-btn pull-right" onclick="ga('send','event','Navbar','click','Print')" onclick="ga('send', 'timing', 'navbar', 'load', 3549, 'Print Product')">
-              <span class="glyphicon glyphicon-print"></span>
-              <span id="printButtonText"> Print</span>
           </button>
 
           <button id="shareNavButton" type="button" class="btn btn-primary navbar-btn pull-right">
@@ -123,150 +117,33 @@
           <div class="modal-content">
               <div class="modal-header">
                   <button class="close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;">&times;</button>
-                  <h4 class="modal-title">Western Lake Erie Restoration Assessment (WLERA)</h4>
+                  <h4 class="modal-title">Ohio-Wetlands-Restoration (OWR)</h4>
               </div>
               <div id="aboutModalBody" class="modal-body">
                   <ul class="nav nav-tabs" id="aboutModalTabs">
                       <li role="presentation" class="active"><a id="aboutTab" href="#aboutTabPane" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the application</a></li>
-                      <li role="presentation"><a id="metadataTab" href="#metadataTabPane" data-toggle="tab" onclick="ga('send','event','About Modal','click','Layer Information')"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Layer Information</a></li>
-                      <li role="presentation"><a id="disclaimerTab" href="#disclaimerTabPane" data-toggle="tab" onclick="ga('send','event','About Modal','click','Disclaimer')"><i class="fa fa-exclamation-circle"></i>&nbsp;Disclaimer</a></li>
-                      <li role="presentation"><a id="contactTab" href="#contactTabPane" data-toggle="tab"onclick="ga('send','event','About Modal','click','Contact')"><i class="fa fa-envelope"></i>&nbsp;Contact</a></li>
-                      <li role="presentation"><a id="updatesTab" href="#updatesTabPane" data-toggle="tab" onclick="ga('send','event','About Modal','click','Get Updated')"><i class="fa fa-newspaper-o" aria-hidden="true"></i></i>&nbsp;Get Updated</a></li>
                   </ul>
                   <div class="tab-content">
                       <div role="tabpanel" class="tab-pane active about-tab-content" id="aboutTabPane"></br>
 
                           <div class="wetland-pic tabText">
-                              <p>The Western Lake Erie Restoration Assessment (WLERA) model was co-developed by investigators in the Environmental Studies Program at the New College of Florida in
-                              Sarasota, Florida and the USGS - Great Lakes Science Center in Ann Arbor, Michigan. The web mapping application for interfacing with the WLERA model was developed
-                              by programmers at the Wisconsin Internet Mapping Group.</p>
-
-                              <p>The WLERA is a geodesign framework for measuring the potential to restore coastal wetlands in the Great Lakes basin. This framework is based on the expert coupling of
-                              multiple criteria decision analysis and geographic information systems. Experts included regional wetland ecologists, biologists, planners and geographers from federal,
-                              state, academic and non- governmental organizations. Criteria include historical water levels, topography, soils, mapped wetlands, managed lands, and impervious and
-                              non-impervious development on the landscape. The WLERA data and kernel analysis are organized in ArcGIS 10.3 geodatabases and python applications.</p>
-
-                              <p>Within the 195,621 ha study area between the mouths of the Detroit River, MI and Black River, OH, the WLERA normalized composite index model identified over 7,500
-                              hectares of areas highly suitable for coastal wetland habitat restoration. The model results 1) range from -100 to 100 with positive values representing areas with higher potential for restoration (yellow to green).
-                              2) have a pyramided spatial resolution of 1 meter at the lowest level, and 3) can be aggregated by any irregular area, including
-                              individual land ownership parcel boundaries or custom boundaries created with the Area Summary Tool in the web mapping application. Areas with the highest
-                              restorability class (greater than 80) coincided with 10 areas currently selected by GLRI for restoration in WLE. As the region continues to restore coastal wetland
-                              habitats, this tool and analysis will support restoration decisions.</p>
-
-                              <p>The development of the WLERA has been supported by the Great Lakes Restoration Initiative, the Upper Midwest and Great Lakes Landscape Conservation Cooperative and the University of Michigan Water Center.</p>
-
+                              <p>The Ohio Wetlands Restoration (OWR) is a proof of concept and for demo purposes only</p>
                           </div>
                           <br>
 
                           <span>
                               <img src="images/USGS_ID_green.png" alt="..."  style="width: 200px" class="aboutTabLogos">
-                              <img src="images/NCF_logo.jpg" alt="..."  style="width: 200px" class="aboutTabLogos">
                               <img src="images/glri-logo.jpg" alt="..."  style="width: 200px" class="aboutTabLogos">
                               <img src="images/Logo_UMGL.jpg" alt="..."  style="width: 200px" class="aboutTabLogos">
                           </span>
 
-
-                      </div>
-                      <div role="tabpanel" class="tab-pane tabText" id="metadataTabPane"></br>
-                          <b>Below is a list of WLERA layers with description and source. For complete metadata, please visit the <a href='https://www.sciencebase.gov/catalog/item/57f406b1e4b0bc0bec032678' target='_blank'>USGS ScienceBase catalog item for GLCWRA <i class="fa fa-external-link" aria-hidden="true"></i></a></b><br />
-                          <br />
-                          <b>WLERA Composite Index:</b> Restorability model developed by New College of Florida, USGS, TNC, and NOAA using detailed terrain and historical lake levels, and national soils, wetlands, land use, and land cover data. <br />
-                          Source: New College of Florida, USGS <br />
-                          <br />
-                          <b>Study Area Boundary:</b> The boundary line for the WLERA study area was determined with the alongshore extent from the Detroit River in Michigan to the Black River in Ohio. The offshore boundary is determined with a 2 km buffer from the mapped coastline. The landward boundary is determined from the elevation of the maximum Western Lake Erie lake water level height buffered by 1 m of elevation and 1 km inland. For informational purposes only.<br />
-                          Source: New College of Florida and U.S. Geological Survey<br />
-                          <br />
-                          <b>Land Parcels:</b> The parcels were collected from the tax collector and property appraisers departments for respective counties. The parcel boundaries represent the geometry published by each county in September 2015. For informational purposes only.<br />
-                          Source: Monroe County, Michigan; Lucas County, Ottawa County, Sandusky County, Erie County, Lorain County, Ohio. <br />
-                          <br />
-                          <b>Oblique Aerial Imagery:</b> These points show the locations of linked ACOE oblique aerial photography from <a href='http://greatlakes.usace.army.mil' target='_blank'>greatlakes.usace.army.mil <i class="fa fa-external-link" aria-hidden="true"></i></a><br />
-                          Source: US Army Corps of Engineers<br />
-                          <br />
-                          <b>Lake Level Stations:</b> Locations of lake level measurements from NOAA CO-OPS. <br />
-                          Source: NOAA CO-OPS <br />
-                          <br />
-                          <b>Wetland Biological Integrity:</b> Plant indicator scores are based on data collected as part of the Great Lakes Coastal Wetland Monitoring Program. Total vegetation indicator scores are based on 10 metrics that collectively evaluate the relative condition of each wetland. Metrics included entire-site and vegetation-zone specific calculations, which are combined into an overall site score. Metric and scoring calculations are described at <a href='http://greatlakeswetlands.org' target='_blank'>greatlakeswetlands.org <i class="fa fa-external-link" aria-hidden="true"></i></a> <br />
-                          Source:  Great Lakes Coastal Wetland Monitoring Program <br />
-                          <br />
-                          <b>GLRI Wetland Restoration Areas:</b> Project boundaries digitized from GLRI habitat restoration database. http://habitat.glc.org/ <br />
-                          Source: New College of Florida <br />
-                          <br />
-                          <span style="font-size: larger"><b>Parameters Group</b></span><br />
-                          <b>Water Mask (P0):</b> Areas excluded from the analysis but within study area boundary. Most areas are permanent or perennial water features previously mapped by the National Wetlands Inventory and the National Hydrographic Dataset. <br />
-                          Source: New College of Florida, USGS <br />
-                          <br />
-                          <b>Hydroperiod (P1):</b> Developed as the first parameter to the restorability model. Hydroperiod is the amount of time a coastal landscape area is inundated with surface water from western Lake Erie. Areas more frequently inundated are better for restoration.<br />
-                          Source: New College of Florida, USGS <br />
-                          <br />
-                          <b>Wetsoils (P2):</b> Developed as the second parameter to the restorability model. Wetland soils areas are mapped as existing wetlands or as hydrologic soils that support wetlands. These areas are better for restoration. <br />
-                          Source: New College of Florida, USGS <br />
-                          <br />
-                          <b>Flowline (P3):</b> Developed as the third parameter to the restorability model. Flowline areas are mapped as part of a drainage network connecting to Lake Erie. These areas are better for restoration. <br />
-                          Source: New College of Florida, USGS <br />
-                          <br />
-                          <b>Conserved Lands (P4):</b> Developed as the fourth parameter to the restorability model representing areas within ranges of mapped CARL boundaries. Areas closer to CARL boundaries are better for restoration. <br />
-                          Source: New College of Florida, USGS <br />
-                          <br />
-                          <b>Impervious Surfaces (P5):</b> Developed as the fifth parameter to the restorability model representing areas with impervious surfaces such as roads, parking lots and buildings. Impervious surfaces can be important societal infrastructure and expensive / difficult to modify for restoration. <br />
-                          Source: New College of Florida, USGS <br />
-                          <br />
-                          <b>Landuse (P6):</b> Developed as the sixth parameter to the restorability model representing areas without impervious surfaces but high societal importance such as active agriculture, golf courses and parks. These areas can be expensive / difficult to modify for restoration. <br />
-                          Source: New College of Florida, USGS <br />
-                          <br />
-                          <span style="font-size: larger"><b>Hydro Conditioning Group</b></span><br />
-                          <b>Culverts:</b> Locations of potential culverts or other hydraulic control structures. These locations are important for understanding the hydrologic connections between a coastal area and the lake. <br />
-                          Source: New College of Florida, University of Michigan-Dearborn, The Nature Conservancy, NOAA, USGS <br />
-                          <br />
-                          <b>Degree Flowlines:</b> Attribute flowline reaches used in model parameter three with the number of artificial disconnections between the reach and western Lake Erie. These data will help identify the degree of hydrologic separation between potential restoration areas and Lake Erie.<br />
-                          Source: New College of Florida, University of Michigan-Dearborn, The Nature Conservancy, NOAA, USGS <br />
-                          <br />
-                          <b>Dikes:</b> Modeled locations of dikes. Dikes are important control features for restoring coastal wetlands. <br />
-                          Source: New College of Florida, University of Michigan-Dearborn, The Nature Conservancy, NOAA, USGS <br />
-                      </div>
-                      <div role="tabpanel" class="tab-pane tabText" id="disclaimerTabPane"></br>
-                          <h3>Data Limitations</h3>
-                          <p>Data are provisional and are subject to revision as the analysis is refined and new data products are added.</p>
-                          <p>Provisional data may be inaccurate due to input data or physical changes on the landscape. Subsequent review based on field inspections and analysis may result in significant revisions to the data.</p>
-                          <p>The data are being provided to meet the need for timely best science and are released on the condition that neither the USGS nor the U.S. Government may be held liable for any damages resulting from authorized or unauthorized use of the information. </p>
-                          <p>Data users are cautioned to consider carefully the provisional nature of the information before using it for decisions that concern personal or public safety or the conduct of business that involves substantial monetary or operational consequences.</p>
-
-                      </div>
-                      <div role="tabpanel" class="tab-pane tabText" id="contactTabPane"></br>
-                          <p>
-                              <label>New College of Florida</label><br>
-                              <span>Justin Saarinen, Geographer<br>jsaarinen@ncf.edu</span>
-                          </p>
-
-                          <p>
-                              <label>USGS Great Lakes Science Center</label><br>
-                              <span>Kurt Kowalski, Wetland Ecologist<br>kkowalski@usgs.gov</span>
-                          </p>
-
-                          <p>
-                              <label>USGS WiM</label><br>
-                              <span>Blake Draper, Software Developer<br>bdraper@usgs.gov</span><br><br>
-                              <span>Hans Vraga, Project Manager<br>hvraga@usgs.gov</span>
-                          </p>
-
-                          <p><h4><a href="https://lccnetwork.org/group/coastal-conservation-working-group" target="_blank">Upper Midwest and Great Lakes LCC Coastal Conservation Working Group</a></h4></p>
-
-
-                          <img src="images/USGS_ID_green.png" alt="..."  style="width: 200px">
-                          <img src="images/NCF_logo.jpg" alt="..."  style="width: 200px">
-                          <img src="images/glri-logo.jpg" alt="..."  style="width: 200px">
-                          <img src="images/Logo_UMGL.jpg" alt="..."  style="width: 200px">
-
-
-                      </div>
-                      <div role="tabpanel" class="tab-pane tabText" id="updatesTabPane"></br>
-                          <p>This application and the others in the GLCWRA project will be improved with additional features throughout 2017. To receive email updates of future feature additions and other improvements to this application, along with periodic news regarding latest efforts to improve coastal resilience in the region, please join the <a href='https://greatlakeslcc.org/content/join-upper-midwest-and-great-lakes-lcc-coastal-conservation-community' target='_blank' onclick="ga('send','event','About Modal','click','Link to LCC Mailing list')">Upper Midwest and Great Lakes LCC Coastal Conservation Community mailing list. <i class="fa fa-external-link" aria-hidden="true"></i></a> </p>
                       </div>
                   </div>
               </div>
 
               <div class="modal-footer">
                   <p style="color:black; margin-left:35px;text-align:left">
-                      For more information about the WLERA web application please contact <a href="http://wim.usgs.gov/" target="_blank"><img src="images/wimvectorxs.png" id="wim_logo"></a> or visit Contact tab for project info.
+                      For more information about the OWR web application please contact <a href="http://wim.usgs.gov/" target="_blank">WIM</a>
                   </p>
                   <button class=" btn btn-default close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;" class="btn btn-default">Close</button>
               </div>
@@ -298,32 +175,6 @@
               </div>
               <div class="modal-footer">
                   <button id="btnDismiss" type="submit" class="btn btn-default close" data-dismiss="modal">Close</button>
-              </div>
-          </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-  </div>
-
-  <div class="modal fade overflow-y-hidden" id="printModal" style="display: none;" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-                  <h4 class="modal-title"><span class="glyphicon glyphicon-print"></span> Print Map</h4>
-              </div>
-              <div id="printModalBody" class="modal-body">
-
-
-                  <form id="print-title-form" class="form-group" onSubmit="return false;">
-                      <label for="printTitle">Title </label>
-                      <input class="form-control" id="printTitle" placeholder="Enter a title for your printout">
-                  </form>
-
-                  <form id="print-form" class="form-inline">
-                      <button id="printExecuteButton" type="button" class="btn btn-success btn-fixed" data-loading-text="Printing..." > Print </button>
-                      <button id="printDismissButton" class="btn btn-default btn-fixed" data-dismiss="modal"> Dismiss</button>
-                  </form>
-
-                  <div id="printJobsDiv" style="margin-top: 5px;"><label>Print Jobs </label><p class="toRemove"> No print jobs yet</p></div>
               </div>
           </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -406,14 +257,11 @@
                       <div id="restorationModelGroupHeading" class="groupHeading">
                           <label>Restoration Model</label>
                       </div>
-                      <!--<div class="btn-group-vertical lyrTogDiv" style="cursor: pointer;" data-toggle="buttons">-->
-                          <!--<button id="normalized" type="button" class="btn btn-default lyrTog" aria-pressed="true" style="font-weight: bold;text-align: left"><i class="checkBoxIcon fa fa-square-o"></i>&nbsp;&nbsp;WLERA Composite Index<span id="opacitynormalized" class="glyphspan glyphicon glyphicon-adjust pull-right opacity"></span></button>-->
-                      <!--</div>-->
                       <div class="container-fluid container-btn">
                           <div class="row">
                               <div class="col-xs-9 col-btn">
                                   <div class="btn-group-vertical lyrTogDiv" style="cursor: pointer;" data-toggle="buttons">
-                                      <button id="normalized" type="button" class="btn btn-default lyrTog" aria-pressed="true" style="font-weight: bold;text-align: left" onclick="ga('send','event','Layer - Restoration Model','click','WLERA Composite Index')"><i class="checkBoxIcon fa fa-square-o"></i>&nbsp;&nbsp;WLERA Composite Index</button>
+                                      <button id="normalized" type="button" class="btn btn-default lyrTog" aria-pressed="true" style="font-weight: bold;text-align: left" onclick="ga('send','event','Layer - Restoration Model','click',' Composite Index')"><i class="checkBoxIcon fa fa-square-o"></i>&nbsp;&nbsp; Composite Index</button>
                                   </div>
                               </div>
                               <div class="col-xs-3 col-btn col-btn-extras" style="height: 100%">
@@ -799,17 +647,6 @@
                           </div>
                       </div>
                   </div>
-              </div>
-
-              <div id="sidebar-ornament" class="wetland-pic sidebar-pic-content">
-                  <p>Play around! This is an interactive web mapping application to help you make decisions about restoring coastal wetlands in Western Lake Erie.
-                  Turn layers on & off to understand how they relate to restoration decisions, scale in and out, change basemaps, and use the Area Summary Tool if you are interested in a particular area.</p>
-
-                  <p>The Great Lakes Restoration Initiative and the Upper Midwest and Great Lakes Landscape Conservation Cooperative supported the development of this website.</p>
-                  <img src="images/USGS_ID_white.png" alt="..."  style="width: 100px">
-                  <img src="images/NCF_4winds.png" alt="..."  style="width: 100px">
-                  <img src="images/glri-logo.jpg" alt="..." class="img-rounded" style="width: 100px">
-                  <img src="images/Logo_UMGL.jpg" alt="..."  class="img-rounded" style="width: 100px">
               </div>
 
               <div class="identification pull-right">powered by  <a href="http://wim.usgs.gov/" target="_blank">WiM</a></div>
