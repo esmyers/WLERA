@@ -1204,11 +1204,12 @@ require([
         //legendLayers.push({ layer: app.reachesLayer, title: "SPARROW Reaches > 150 cfs" });
 
         //TODO: ADD NWI Layers        
-         /* const NWILayer = new ArcGISDynamicMapServiceLayer(mapServiceRoot + "WLERA/MapServer", { id: "culverts", visible: false, minScale: 100000, opacity: 1 });
-        culvertsLayer.setVisibleLayers([15]);
-        mapLayers.push(culvertsLayer);
-        mapLayerIds.push(culvertsLa    yer.id);
-        culvertsLayer.inLegendLayers = false; */
+        const NWILayer = new ArcGISDynamicMapServiceLayer("https://fwspublicservices.wim.usgs.gov/server/rest/services/Wetlands/MapServer/", { id: "NWI", visible: false, minScale: 250000, opacity: 0.9 });
+        culvertsLayer.setVisibleLayers([0]);
+        mapLayers.push(NWILayer);
+        mapLayerIds.push(NWILayer.id);
+            legendLayers.push({ layer: NWILayer, title: "national Wetlands Inventory" });
+
         
         /* PHOSPHORUS HUC8*/
 
