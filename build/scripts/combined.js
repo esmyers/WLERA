@@ -1544,6 +1544,13 @@ require([
         mapLayers.push(app.reachesLayer);
         mapLayerIds.push(app.reachesLayer.id);
         //legendLayers.push({ layer: app.reachesLayer, title: "SPARROW Reaches > 150 cfs" });
+
+        //TODO: ADD NWI Layers        
+         /* const NWILayer = new ArcGISDynamicMapServiceLayer(mapServiceRoot + "WLERA/MapServer", { id: "culverts", visible: false, minScale: 100000, opacity: 1 });
+        culvertsLayer.setVisibleLayers([15]);
+        mapLayers.push(culvertsLayer);
+        mapLayerIds.push(culvertsLa    yer.id);
+        culvertsLayer.inLegendLayers = false; */
         
         /* PHOSPHORUS HUC8*/
 
